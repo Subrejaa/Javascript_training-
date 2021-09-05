@@ -1,0 +1,24 @@
+doctype html 
+html 
+    head 
+        title="STUDENT LIST"
+    body 
+        p(style="color:violet") STUDENT INFORMATION
+
+        table(border="1" cellpadding="5")
+
+             thead
+
+                 th FULLNAME 
+                    button sort
+                 th QUALIFICATION 
+                    button sort
+                 th PHONE NUMBER
+                    button sort
+
+                 each val in allstudents
+
+                    tr 
+                        td  #{val.fullname}
+                        td #{val.edu}
+                        td #{val.mobile}

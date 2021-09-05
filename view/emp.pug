@@ -1,0 +1,24 @@
+doctype html 
+html 
+    head 
+        title="EMPLOYEE LIST"
+    body 
+        p(style="color:violet") EMPLOYEE INFORMATION
+
+        table(border="1" cellpadding="5")
+
+             thead
+
+                 th FULLNAME 
+                    button sort
+                 th DESIGNATION
+                    button sort
+                 th PHONE NUMBER
+                    button sort
+
+                 each val in allemp
+
+                    tr 
+                        td  #{val.fullname}
+                        td #{val.desig}
+                        td #{val.mobile}

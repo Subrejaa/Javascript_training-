@@ -1,0 +1,18 @@
+doctype html 
+html 
+    head 
+        title="Table Pug"
+    body 
+
+        table
+
+             thead
+
+                 th USERNAME 
+                 th EMAIL ID
+
+                 each val in allusers
+
+                    tr 
+                        td  #{val.username}
+                        td #{val.email}

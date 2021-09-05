@@ -1,0 +1,17 @@
+doctype html 
+html 
+    head
+        title = "TICKET BOOKING"
+    body 
+        p(style="color:violet") BOOKED TICKETS
+        table(border="1" cellpadding="5")
+            thead 
+                th "PASSENGER NAME"
+                th "FROM"
+                th "DESTINATION"
+                th "NUMBER OF TICKETS"
+            each val in alltkt 
+                tr 
+                    td #{val.pname}
+                    td #{val.froml}
+                    td #{val.des}
